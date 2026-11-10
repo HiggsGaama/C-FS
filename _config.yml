@@ -1,0 +1,16 @@
+title: "Full-Stack Web Development: C#, ASP.NET Core Web API, and React"
+description: "Production-Grade Course: C#, ASP.NET Core Web API, and React (Zero to Production)"
+theme: minima
+
+# Disable automatic header navigation generation across all markdown files
+header_pages: []
+
+# Markdown & Syntax Highlighting
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: csharp
