@@ -133,6 +133,7 @@ server {
 
 Create `.github/workflows/ci-cd.yml` in your repository root:
 
+{% raw %}
 ```yaml
 name: Production CI/CD Pipeline
 
@@ -229,6 +230,7 @@ jobs:
           ghcr.io/${{ github.repository }}/frontend:latest
           ghcr.io/${{ github.repository }}/frontend:${{ github.sha }}
 ```
+{% endraw %}
 
 ---
 

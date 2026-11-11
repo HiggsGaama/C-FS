@@ -28,6 +28,7 @@ npm install zustand @microsoft/signalr
 
 ### 2. Complete Application (`src/TradingTerminal.tsx`)
 
+{% raw %}
 ```tsx
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { create } from 'zustand';
@@ -228,6 +229,7 @@ export default function TradingTerminal() {
   );
 }
 ```
+{% endraw %}
 
 ---
 

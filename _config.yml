@@ -1,6 +1,6 @@
 title: "Full-Stack Web Development: C#, ASP.NET Core Web API, and React"
 description: "Production-Grade Course: C#, ASP.NET Core Web API, and React (Zero to Production)"
-theme: minima
+theme: jekyll-theme-midnight
 
 # Disable automatic header navigation generation across all markdown files
 header_pages: []

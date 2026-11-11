@@ -90,6 +90,7 @@ flowchart TD
 
 Below is a self-contained virtual list engine implemented without external dependencies:
 
+{% raw %}
 ```tsx
 // src/components/VirtualizedDataGrid.tsx
 import React, { useState, useRef, useMemo } from 'react';
@@ -173,6 +174,7 @@ export function VirtualizedDataGrid({ items, rowHeight, viewportHeight }: Virtua
   );
 }
 ```
+{% endraw %}
 
 ---
 
