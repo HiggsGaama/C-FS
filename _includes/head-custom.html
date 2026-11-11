@@ -1,6 +1,7 @@
 <style>
   .mermaid {
-    background-color: #ffffff;
+    background-color: #191919;
+    border: 1px solid #353535;
     border-radius: 8px;
     padding: 1rem;
     margin: 1.5rem 0;
@@ -12,7 +13,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (typeof mermaid === "undefined") return;
-    mermaid.initialize({ startOnLoad: false, theme: "default" });
+    mermaid.initialize({ startOnLoad: false, theme: "dark" });
 
     var containers = document.querySelectorAll("div.language-mermaid");
     containers.forEach(function (el) {

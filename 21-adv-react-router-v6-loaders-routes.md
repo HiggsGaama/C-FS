@@ -14,7 +14,7 @@
 ```mermaid
 sequenceDiagram
     autonumber
-    rect rgb(255, 235, 235)
+    rect rgba(220, 38, 38, 0.18)
         Note over Browser: Legacy "Fetch-on-Render" Waterfall
         Browser->>Component: Render Layout
         Component->>Component: Mount Child
@@ -22,7 +22,7 @@ sequenceDiagram
         API-->>Component: Orders Arrive -> Trigger Re-render
     end
 
-    rect rgb(235, 255, 235)
+    rect rgba(16, 185, 129, 0.18)
         Note over Browser: Modern React Router v6 Loader
         Browser->>Router: Navigate to /orders
         Router->>API: Execute loader() in parallel while loading code chunk!
