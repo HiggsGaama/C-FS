@@ -1,0 +1,36 @@
+<style>
+  .mermaid {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    overflow-x: auto;
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof mermaid === "undefined") return;
+    mermaid.initialize({ startOnLoad: false, theme: "default" });
+
+    var containers = document.querySelectorAll("div.language-mermaid");
+    containers.forEach(function (el) {
+      var m = document.createElement("div");
+      m.className = "mermaid";
+      m.textContent = el.textContent;
+      el.replaceWith(m);
+    });
+
+    var codeBlocks = document.querySelectorAll("pre code.language-mermaid");
+    codeBlocks.forEach(function (el) {
+      var pre = el.parentElement;
+      var m = document.createElement("div");
+      m.className = "mermaid";
+      m.textContent = el.textContent;
+      pre.replaceWith(m);
+    });
+
+    mermaid.run({ querySelector: ".mermaid" });
+  });
+</script>
